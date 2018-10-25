@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <title>GameCode</title>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="css/style.css" type="text/css"/>   
+    <title>GameCode</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
   </head>
   <body>
-    <header id="barratop">
-      <section id="principal">
-		<img src="img/logo_branco.png" alt="Logo da Pagina"/>
-		<nav id="barramenu">
-            <nav style="margin-top:1%;font-weight:bolder;"><a href="index.html" class="hvr-underline-from-center menuformat">INICIO</a></nav>
-            <nav id="deslizar" style="margin-top:1%;font-weight:bolder;"><span class="hvr-underline-from-center">SOBRE</span><br><br><a href="missao.html" class="margem menuformat">MISSÃO</a></span><br><a href="visao.html" class="margem menuformat">VISÃO</a><br><a href="valores.html" class="margem menuformat">VALORES</a></nav>
-            <nav id="deslizar" style="margin-top:1%;font-weight:bolder;"><span class="hvr-underline-from-center">JOGOS</span><br><br><a href="skyrim.html" class="menuformat">TES V: SKYRIM</a><br><a href="csgo.html" class="margem menuformat">CS:GO</a><br><a href="pubg.html" class="margem menuformat">PUBG</a></nav>
-            <nav style="margin-top:1%;font-weight:bolder;"><a href="contato.html" class="hvr-underline-from-center menuformat">CONTATO</a></nav>
+    <div id="conteudo">
+      <header id="barra-topo">
+        <a href="#"><img id="logo" src="img/logo_branco.png" alt="GameCode"/></a>
+        <nav id="menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li>
+              <a href="#">Sobre</a>
+              <ul class="drop">
+                <li><a href="#">Missão</a></li>
+                <li><a href="#">Visão</a></li>
+                <li><a href="#">Valores</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Jogos</a>
+              <ul class="drop">
+                <li><a href="#">TES V: Skyrim</a></li>
+                <li><a href="#">League of Legends</a></li>
+                <li><a href="#">PUBG</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Contato</a></li>
+          </ul>
         </nav>
-	  </section>
-    </header>
+      </header>
+    </div>
+
   </body>
 </html>
