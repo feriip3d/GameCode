@@ -50,7 +50,7 @@
   color: black;
 }
 
-#menu ul
+.menu_botao
 {
   list-style-type: none;
   display: flex;
@@ -82,6 +82,7 @@
   flex-direction: column;
   position: absolute;
   width: 100%;
+  text-align: center;
 }
 
 #conteudo
@@ -90,4 +91,57 @@
   width: 100%;
   height: 700px;
   position: relative;
+}
+
+.menu_icone_resp
+{
+  display: none;
+}
+
+/* Media Queries para responsividade */
+@media screen and (max-width: 500px)
+{
+  #menu a, #menu ul, .drop
+  {
+    flex-direction: column;
+  }
+
+  #menu ul
+  {
+    position: relative;
+    top: 3.3em;
+  }
+
+  .menu_botao
+  {
+    display: none;
+  }
+
+  .menu_icone_resp
+  {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    right: 0;
+    top: 0.15em;
+    cursor: pointer;
+    color: #fff;
+    font-size: 2.5em;
+  }
+
+  .menu_botao_show
+  {
+    display: flex;
+  }
+
+  .drop li
+  {
+    position: absolute;
+    right: 11.8em;
+  }
+
+  #menu li:hover
+  {
+    height: 3.3em;
+  }
 }
