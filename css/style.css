@@ -8,6 +8,7 @@
 
 #barra-topo
 {
+  z-index: 100;
   top: 0;
   left: 0;
   background-color: rgb(35, 35, 35);
@@ -42,12 +43,13 @@
   justify-content: center;
   text-decoration: none;
   transition: background, 0.5s;
+  
 }
 
 #menu a:hover
 {
-  background-color: white;
-  color: black;
+  background-color: rgb(50,50,50);
+  color: gold;
 }
 
 .menu_botao
@@ -69,33 +71,69 @@
   top: 0px;
 }
 
-.drop li
+#corpo
 {
-  display: none;
-  position: absolute;
-  top: 0px;
-}
-
-.drop
-{
-  display: flex;
-  flex-direction: column;
-  position: absolute;
+  background-color: white;
   width: 100%;
-  text-align: center;
-}
-
-#conteudo
-{
-  background-color: seagreen;
-  width: 100%;
-  height: 700px;
+  height: 100%;
   position: relative;
 }
 
 .menu_icone_resp
 {
   display: none;
+}
+
+#conteudo
+{
+  width: 75%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: cadetblue;
+  box-shadow: black 0px 10px 200px;
+}
+
+#slide-ph
+{
+  margin-top: 5em;
+  margin-left: 2.3em;
+}
+
+.botoes-bot
+{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: bottom;
+  margin-top: 3em;
+  margin-left: 1em;
+}
+
+.botao-bottom-img
+{
+  display: flex;
+  flex-direction: bottom;
+  margin-left: 1.3em;
+}
+
+.legenda
+{
+  top: 36.1em;
+  text-align: center;
+  width: 22.24%;
+  height: 3em;
+  margin: 0 auto;
+  background-color: black;
+  position: absolute;
+  color: white;
+  decoration: none;
+  font-weight: bolder;
+}
+
+#rodape
+{
+  width: 100%;
+  background-color: rgb(35,35,35);
+  height: 300px;
 }
 
 /* Media Queries para responsividade */
@@ -134,14 +172,32 @@
     display: flex;
   }
 
-  .drop li
-  {
-    position: absolute;
-    right: 11.8em;
-  }
-
   #menu li:hover
   {
     height: 3.3em;
+  }
+
+  #slide-ph
+  {
+    width: 75%;
+  }
+
+  .botao-bottom-img img
+  {
+    width: 87%;
+  }
+
+  .legenda
+  {
+  top: 1em;
+  text-align: center;
+  width: 55.53%;
+  height: 2.5em;
+  margin: 0 auto;
+  background-color: black;
+  position: absolute;
+  color: white;
+  decoration: none;
+  font-weight: bolder;
   }
 }
