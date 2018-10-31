@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+.carousel-home{
+	
+}
+
 #barra-topo
 {
   z-index: 100;
@@ -25,8 +29,8 @@
 }
 
 #titulo_gc{
-	width:190px;
-	height:40px;
+	width:230px;
+	height:45px;
 	color:white;
 	position:absolute;
 	top:11%;
@@ -155,7 +159,6 @@
 
 #f-jogos
 {
-  margin-top: 1em;
   position: absolute;
   right: 10%;
   color: snow;
@@ -167,7 +170,6 @@
 
 #f-sobre
 {
-  margin-top: 1em;
   position: absolute;
   left: 10%;
   color: snow;
