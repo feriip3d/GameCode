@@ -6,10 +6,6 @@
   box-sizing: border-box;
 }
 
-.carousel-home{
-	
-}
-
 #barra-topo
 {
   z-index: 100;
@@ -102,7 +98,7 @@
   width: 75%;
   height: 100%;
   margin: 0 auto;
-  background-color: cadetblue;
+  background-color: rgb(182, 182, 182);
   box-shadow: black 0px 10px 200px;
 }
 
@@ -118,7 +114,7 @@
   flex-wrap: wrap;
   flex-direction: bottom;
   margin-top: 3em;
-  margin-left: 1em;
+  justify-content: center;
   margin-bottom: 2em;
 }
 
@@ -149,12 +145,23 @@
 {
   width: 100%;
   background-color: rgb(35,35,35);
-  height: 100px;
+  height: 110px;
 }
 
 #rodape li
 {
   list-style-type: none;
+}
+
+#rodape li a:link
+{
+  text-decoration: none;
+  color: white;
+}
+
+#rodape li a:visited
+{
+  color: whitesmoke;
 }
 
 #f-jogos
@@ -186,6 +193,11 @@
   #menu a, #menu ul, .drop
   {
     flex-direction: column;
+  }
+
+  #titulo_gc
+  {
+    display: none;
   }
 
   #menu ul
