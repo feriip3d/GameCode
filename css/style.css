@@ -82,7 +82,7 @@
 
 #corpo
 {
-  background-color: white;
+  background-color: cadetblue;
   width: 100%;
   height: 100%;
   position: relative;
@@ -145,7 +145,12 @@
 {
   width: 100%;
   background-color: rgb(35,35,35);
-  height: 110px;
+  height: 125px;
+}
+
+#rodape ul
+{
+  margin-top: 0.8em;
 }
 
 #rodape li
@@ -186,6 +191,99 @@
   flex-direction: bottom;
 }
 
+/* CSS Contato */
+
+#mensagem
+{
+  margin: 1em;
+  width: 40%;
+}
+
+#mensagem h1
+{
+  font-size: 2em;
+  text-align: center;
+}
+
+#mensagem p
+{
+  text-align: center;
+}
+
+#form_contato
+{
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  width: 100%;
+  margin-left: 2%;
+}
+
+#form_contato input, #form_contato textarea
+{
+  width: 100%;
+  padding: 7px;
+  color: black;
+  border-radius: 4px;
+  border: 1px solid;
+}
+
+#contato
+{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+#redes-sociais
+{
+}
+
+/* Sobre */
+#sobre-empresa
+{
+  width: 80%;
+  margin: 1em auto;
+}
+
+#sobre-empresa h1
+{
+  text-align: center;
+  font-size: 2.5em;
+}
+
+#sobre-empresa p
+{
+  text-align: justify;
+  font-size: 1em;
+}
+
+#sobre-referencias
+{
+  padding: 1em;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+
+#sobre-referencias p
+{
+  text-align: center;
+}
+
+#sobre-referencias h1
+{
+  font-size: 2.3em;
+}
+
+#tabela-jogos, #tabela-jogos td, th
+{
+  border: 2px solid black;
+  font-size: 1.1em;
+  text-align: center;
+  padding: 3px;
+  width: 50%;
+  margin: 0 auto;
+}
 
 /* Media Queries para responsividade */
 @media screen and (max-width: 500px)
