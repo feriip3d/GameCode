@@ -212,13 +212,13 @@
   width: 40%;
 }
 
-#mensagem h1
+#mensagem h1, #redes-sociais h1
 {
   font-size: 2em;
   text-align: center;
 }
 
-#mensagem p
+#mensagem p, #redes-sociais h1
 {
   text-align: center;
 }
@@ -252,9 +252,9 @@
 	display:flex;
 	flex: wrap;
 	flex-direction:column;
-	margin-left:40em;
-	position: absolute;
-	bottom:30.2em;
+	margin-left: 37%;
+  position: absolute;
+  margin-top: 1em;
 }
 
 /* Sobre */
