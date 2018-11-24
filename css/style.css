@@ -362,6 +362,11 @@
   width: 100%;
 }
 
+#video-draft
+{
+  margin-left: 8em;
+}
+
 /* Media Queries para responsividade */
 @media screen and (max-width: 500px)
 {
@@ -428,5 +433,28 @@
   position: absolute;
   color: white;
   font-weight: bolder;
+  }
+}
+
+@media screen and (max-width: 1100px)
+{
+  #tb-conosco
+  {
+    margin-left: 25em;
+  }
+
+  #newsletter
+  {
+    margin-left: 25em;
+  }
+
+  #redes-sociais
+  {
+    width: 35%;
+  }
+
+  #video-draft
+  {
+    margin-left: 2em;
   }
 }
