@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>GameCode - Sobre</title>
+    <title>GameCode - Contato</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
@@ -32,21 +32,20 @@
 
     <!-- CONTEUDO DA PAGINA -->
     <section id="conteudo">
-        <img src="img/slide_pholder.png" id="slide-ph">
+        <img src="img/slide_pholder.png" id="slide-ph" alt="Uma pessoa na frente de um computador, com um headset">
       <section id="contato">
       <aside id="mensagem">
         <h1>Mensagem</h1>
         <p>Deixe sua duvida ou opinião, <br/>ela poderá ser lida em breve.</p>
 
-        <form id="form_contato">
-          Nome<br/>
-          <input type="text" name="Nome" placeholder="Nome"/>
-          <br/><br/>Email<br/>
-          <input type="email" nome="Email" placeholder="email@email.com"/>
-          <br/><br/>Mensagem<br/>
-          <input type="text" nome="Mensagem" placeholder="Deixe sua mensagem aqui!"/>
+        <form id="form_contato" class="form_padrao">
+          <label>Nome</label><br/>
+          <input type="text" name="Nome" placeholder="Nome" required="required" maxlength="30"/>
+          <br/><br/><label>Email</label><br/>
+          <input type="email" name="Email" placeholder="email@email.com" required="required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+          <br/><br/><label>Mensagem</label><br/>
+          <input type="text" name="Mensagem" placeholder="Deixe sua mensagem aqui!" required="required" maxlength="180"/>
           <p class="enviar">
-            <br/>
             <input type="submit" value="Enviar">
           </p>
         </form>
@@ -63,6 +62,19 @@
         </section>
       </aside>
 
+      <aside id="newsletter">
+        <h1>Newsletter</h1>
+        <p>Deseja receber nossas novidades?</p>
+        <form id="form_newsletter" class="form_padrao">
+          <input type="email" name="Email" required="required" placeholder="email@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
+          <br/>
+          <input type="submit" value="Sim"/>
+        </form>
+      </aside>
+      <aside id="tb-conosco">
+          <h2>Trabalhe Conosco</h2>
+          <p>Quer fazer parte da nossa equipe? Cliquei <a href="trabalhe-conosco.html">AQUI</a></p>
+        </aside>
     </section>
     </section>
     <footer id="rodape">
